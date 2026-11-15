@@ -7,7 +7,11 @@ public class GestionNotes {
         }
         return somme / notes.length;
     }
-
+    public static void afficherNotes(double[] notes) {
+        for (double n : notes) {
+            System.out.println("Note : " + n);
+        }
+    }
     public static double noteMax(double[] notes) {
         double max = notes[0];
         for (double n : notes) {
@@ -21,3 +25,4 @@ public class GestionNotes {
         System.out.println("Moyenne : " + calculerMoyenne(notes));
     }
 }
+    }
